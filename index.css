@@ -4,15 +4,20 @@
   padding: 0;
 }
 
+/* aumentare il contrasto nav-footer */
+
 :root {
   --white: #F7F5F0;
   --off-white: #EDEBE4;
-  --light-gray: #C8C6BE;
+  --light-gray: #8a8675;
   --mid-gray: #8A8880;
   --dark-gray: #3A3834;
   --black: #18160F;
   --serif: 'EB Garamond', Georgia, serif;
   --mono: 'DM Mono', monospace;
+  --facebook:#5b6b8a;
+  --twitter:#7099b2;
+  --google:#b86654;
 }
 
 html {
@@ -238,80 +243,110 @@ section {
   color: var(--black);
 }
 
+/* login */
 
-/* ── APPLICAZIONI ── */
-.applicazioni {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+.login-section {
+  padding: 0 0;
   border-top: 1px solid var(--light-gray);
+  font-family: var(--serif);
 }
 
-.app-left {
-  padding: 6rem 4rem 6rem 3rem;
-  border-right: 1px solid var(--light-gray);
+form {
+  position: relative;
+  border-radius: 5px;
+  padding: 20px 0 30px 0; /*da modificare per includere dimensioni relative vh, wh, %*/
 }
 
-.app-right {
-  padding: 6rem 3rem 6rem 4rem;
-  background: var(--black);
-  color: var(--white);
+/* style inputs and link buttons */
+input,
+.w3btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
 }
 
-.app-title {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  line-height: 1.2;
+input:hover,
+.w3btn:hover {
+  opacity: 1;
 }
 
-.app-right .app-title {
-  color: var(--white);
+/* add appropriate colors to fb, twitter and google buttons */
+/* color mix
+https://www.w3schools.com/colors/colors_mixer.asp */
+.fb {
+  background-color: var(--facebook);
+  color: white;
 }
 
-.app-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+.twitter {
+  background-color: var(--twitter);
+  color: white;
 }
 
-.app-list li {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  font-size: 1rem;
-  color: var(--mid-gray);
-  padding-bottom: 1.2rem;
-  border-bottom: 1px solid var(--light-gray);
+.google {
+  background-color: var(--google);
+  color: white;
 }
 
-.app-right .app-list li {
-  color: var(--mid-gray);
-  border-bottom-color: var(--dark-gray);
-}
-
-.app-list li::before {
-  content: '→';
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 300;
-  color: var(--light-gray);
-  flex-shrink: 0;
-}
-
-.app-right .app-list li::before {
+/* style the submit button */
+input[type=submit] {
+  background-color: var(--off-white);
   color: var(--dark-gray);
+  cursor: pointer;
 }
 
-.app-list li strong {
+input[type=submit]:hover {
   color: var(--black);
-  font-weight: 500;
 }
 
-.app-right .app-list li strong {
-  color: var(--white);
+/* Two-column layout */
+.login-col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
 }
+
+/* Clear floats after the columns */
+.login-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
 
 /* ── FOOTER ── */
 footer {
