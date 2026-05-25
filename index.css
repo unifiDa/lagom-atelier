@@ -383,7 +383,6 @@ footer {
 .hero-label   { animation: fadeUp 0.8s ease both; animation-delay: 0.1s; }
 .hero-title   { animation: fadeUp 0.8s ease both; animation-delay: 0.25s; }
 .hero-subtitle{ animation: fadeUp 0.8s ease both; animation-delay: 0.4s; }
-.geo-composition { animation: fadeUp 1s ease both; animation-delay: 0.3s; }
 .hero-quote   { animation: fadeUp 0.8s ease both; animation-delay: 0.5s; }
 
 /* ── RESPONSIVE ── */
@@ -392,12 +391,8 @@ footer {
   .nav-links { display: none; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 4rem 1.5rem; border-right: none; border-bottom: 1px solid var(--light-gray); }
-  .hero-right { min-height: 50vh; }
   .principi-grid { grid-template-columns: 1fr; }
   .principio { border-right: none; border-bottom: 1px solid var(--light-gray); }
-  .applicazioni { grid-template-columns: 1fr; }
-  .app-left { border-right: none; border-bottom: 1px solid var(--dark-gray); padding: 4rem 1.5rem; }
-  .app-right { padding: 4rem 1.5rem; }
   section { padding: 5rem 1.5rem; }
   .manifesto { padding: 6rem 1.5rem; }
   footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.5rem; }
