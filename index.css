@@ -122,80 +122,12 @@ nav {
   font-style: italic;
 }
 
-.hero-right {
-  position: relative;
-  background: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
 }
 
-.hero-right-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  z-index: 2;
-}
 
-/* Abstract geometric composition — bianco su nero */
-.geo-composition {
-  position: relative;
-  width: 240px;
-  height: 320px;
-}
-
-.geo-rect-1 {
-  position: absolute;
-  top: 0; left: 40px;
-  width: 160px; height: 200px;
-  border: 1px solid var(--mid-gray);
-}
-
-.geo-rect-2 {
-  position: absolute;
-  top: 60px; left: 0;
-  width: 120px; height: 120px;
-  background: var(--white);
-  opacity: 0.06;
-}
-
-.geo-rect-3 {
-  position: absolute;
-  bottom: 0; right: 0;
-  width: 100px; height: 140px;
-  border: 1px solid rgba(247,245,240,0.2);
-}
-
-.geo-line {
-  position: absolute;
-  top: 50%; left: 0; right: 0;
-  height: 1px;
-  background: rgba(247,245,240,0.15);
-}
-
-.geo-dot {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--white);
-  opacity: 0.5;
-}
-
-.hero-quote {
-  font-family: var(--mono);
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--mid-gray);
-  text-align: center;
-  line-height: 2;
-}
 
 /* ── SECTION BASE ── */
 section {
