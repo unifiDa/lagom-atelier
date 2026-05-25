@@ -87,7 +87,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   padding: 6rem 4rem 6rem 3rem;
-  border-right: 1px solid var(--light-gray);
 }
 
 .hero-label {
