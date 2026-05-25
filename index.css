@@ -307,48 +307,6 @@ section {
   color: var(--black);
 }
 
-/* ── PALETTE STRIP ── */
-.palette-strip {
-  display: flex;
-  height: 120px;
-  border-top: 1px solid var(--light-gray);
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.palette-swatch {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.palette-swatch span {
-  font-family: var(--mono);
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.swatch-1 { background: var(--white); }
-.swatch-1 span { color: var(--light-gray); }
-
-.swatch-2 { background: var(--off-white); }
-.swatch-2 span { color: var(--light-gray); }
-
-.swatch-3 { background: var(--light-gray); }
-.swatch-3 span { color: var(--dark-gray); }
-
-.swatch-4 { background: var(--mid-gray); }
-.swatch-4 span { color: var(--off-white); }
-
-.swatch-5 { background: var(--dark-gray); }
-.swatch-5 span { color: var(--light-gray); }
-
-.swatch-6 { background: var(--black); }
-.swatch-6 span { color: var(--mid-gray); }
 
 /* ── APPLICAZIONI ── */
 .applicazioni {
